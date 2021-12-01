@@ -56,7 +56,7 @@ int main()
 	system("pause");
 	
 ===========================================================*/
-	
+	/*
 	int age;
 	int ageGroup=0;
 
@@ -104,12 +104,26 @@ int main()
 
 	system("pause");
 	}
-
+	*/
 //=====================TASK3===================
 //3. Rewrite this for - loop as a while - loop:
-
+	/*
 	for (int i = 0; i < 10; i++)
 	{
 		//insert your own action here...
+		std::cout << i << std::endl;
 	}
+	system("pause");
+	*/
+//=============================================
+	
+	int i=0;
+
+	while (i < 10)
+	{
+		i++;
+		std::cout << i << std::endl;
+	}
+	system("pause");
+	
 }
