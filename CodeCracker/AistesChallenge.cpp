@@ -8,10 +8,10 @@ void Diamond();
 
 int main()
 {
-	//Stars();
-	//Rectangle();
-	//HollowRect();
-	//Triangle();
+	Stars();
+	Rectangle();
+	HollowRect();
+	Triangle();
 	Diamond();
 	system("pause");
 }
@@ -71,7 +71,7 @@ void HollowRect()
 	{
 		for (int j = 0; j <= width; j++)
 		{
-			if (i == 0 || j == 0 || i == height || j == width ) // or--||
+			if (i == 0 || j == 0 || i == height || j == width ) // or is ||
 			{
 				std::cout << Star;
 			}
@@ -111,7 +111,7 @@ void Diamond()
 	std::cout << "Enter desired diamond width" << std::endl;
 	std::cin >> maxRows;
 	
-
+	//----up part
 	for (int i = 0; i < maxRows; i++)
 	{
 		std::cout << Star;
@@ -121,7 +121,7 @@ void Diamond()
 		}
 		std::cout << std::endl;
 	}
-
+	//-----bottom part
 	for (int k = (maxRows-2); k >= 0; k--)
 	{
 		std::cout << Star;
@@ -131,36 +131,4 @@ void Diamond()
 		}
 		std::cout << std::endl;
 	}
-
-	//while (numStars < maxRows)
-	//{
-	//	std::cout << Star;
-	//	for (int i = 0; i < numStars; i++)
-	//	{
-	//		std::cout << Star;
-	//	}
-	//	numStars++;
-	//	std::cout << std::endl;
-
-	//	if (numStars == maxRows)
-	//	{
-	//		while (numStars > 0)
-	//		{
-	//			std::cout << Star;
-	//			for (int i = numStars; i > 1; i--)
-	//			{
-	//				std::cout << Star;
-	//			}
-	//			numStars--;
-	//			std::cout << std::endl;
-	//		}
-	//		break;
-	//	}
-	//}
-
-
-
-
-
-
 }
