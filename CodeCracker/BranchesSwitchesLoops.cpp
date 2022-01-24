@@ -1,10 +1,11 @@
 #include <iostream>
+using namespace std;
 
 int main()
 {
-/*======================================================TASK1==================================================================
+//======================================================TASK1==================================================================
 //1. Rewrite this switch statement as an if/else statement and, if you can, use enumerated values to replace the magic numbers:
-
+	/*
 	int num = 1;
 
 	switch (num)
@@ -19,22 +20,35 @@ int main()
 		std::cout << "2" << std::endl;
 	}
 	system("pause");
-
-=========================================================*/
-	/*
+	*/
+//=========================================================
+	
+	enum number{zero = 0, one = 1, two = 2 };
 	int num;
-	std::cin>> num;
 
-	if (num)
+	std::cout << "enter a number from 0 to 2" << std::endl;
+	std::cin >> num;
+	std::cout << std::endl;
+
+	if (num == number{zero})
 	{
-		std::cout << num << std::endl;
+		std::cout << number{ zero } << std::endl;
 	}
-	else 
+	else if (num == )
 	{
-		std::cout << "enter an integer" << std::endl;
+		std::cout << "1" << std::endl;
+	}
+	else if (num == 2)
+	{
+		std::cout << "2" << std::endl;
+	}
+	else
+	{
+		std::cout << "enter an integer from 0 to 2" << std::endl;
 	}
 	system("pause");
-	*/
+	
+
 //=========================================================================================================
 
 /*================================================TASK2====================================================
