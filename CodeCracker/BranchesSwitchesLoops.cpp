@@ -77,14 +77,15 @@ int main()
 	system("pause");
 	
 =========================================================================================================*/
-	
+	/*
 	int age;
 	int ageGroup=0;
-	do{
-	std::cout << "enter your age" << std::endl;
-	std::cin >> age;
 
-	
+	do
+	{
+		std::cout << "enter your age" << std::endl;
+		std::cin >> age;
+
 		if (0 < age && age <= 24)
 		{
 			ageGroup = 1;
@@ -100,12 +101,11 @@ int main()
 			ageGroup = 3;
 			std::cout << ageGroup << std::endl;
 		}
-	else
-	{
-		ageGroup = 0;
-		std::cout << "age cannot be negative" << std::endl;
-		
-	}
+		else
+		{
+			ageGroup = 0;
+			std::cout << "age cannot be negative" << std::endl;
+		}
 	} while (ageGroup == 0);
 
 	switch (ageGroup)
@@ -129,25 +129,26 @@ int main()
 
 	system("pause");
 	}
-	
+	*/
 //=========================================================================================================
 
 //=====================TASK3===================
 //3. Rewrite this for - loop as a while - loop:
 	/*
+	std::cout << "first version" << std::endl;
 	for (int i = 0; i < 10; i++)
 	{
 		//insert your own action here...
 		std::cout << i << std::endl;
 	}
 	system("pause");
-	*/
+	
 //=============================================
-	/*
-	int i;
-	i = 0;
+	
+	int i = 0;
 
-	while (i < 10)
+	std::cout << "second version" << std::endl;
+	while ( i < 10)
 	{
 		std::cout << i << std::endl;
 		i++;
@@ -160,7 +161,7 @@ int main()
 //4. Rewrite this do-while as a for-loop:
 	/*
 	int i = 0;
-
+	std::cout << "first version" << std::endl;
 	do
 	{
 		//insert your own action here...
@@ -168,9 +169,10 @@ int main()
 		++i;
 	} while (i < 25);
 	system("pause");
-	*/
+	
 //===============================================
-	/*
+	
+	std::cout << "second version" << std::endl;
 	for (int i = 0; i < 25; i++)
 	{
 		std::cout << i << std::endl;
