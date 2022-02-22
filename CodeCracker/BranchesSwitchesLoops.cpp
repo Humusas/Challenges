@@ -22,32 +22,38 @@ int main()
 	system("pause");
 	*/
 //=========================================================
-	
-	enum number{zero = 0, one = 1, two = 2 };
-	int num;
+	/*
+	enum number
+	{
+		zero = 0,
+		one = 1,
+		two = 2
+	};
 
+	int num;
+		
 	std::cout << "enter a number from 0 to 2" << std::endl;
 	std::cin >> num;
 	std::cout << std::endl;
-
-	if (num == number{zero})
+	is_en	
+	if (is_enum <>)
 	{
-		std::cout << number{ zero } << std::endl;
+		std::cout << number{zero} << std::endl;
 	}
-	else if (num == )
+	else if (num == number{one})
 	{
-		std::cout << "1" << std::endl;
+		std::cout << number{one} << std::endl;
 	}
-	else if (num == 2)
+	else if (num == number{two})
 	{
-		std::cout << "2" << std::endl;
+		std::cout << number{two} << std::endl;
 	}
 	else
 	{
 		std::cout << "enter an integer from 0 to 2" << std::endl;
 	}
 	system("pause");
-	
+	*/
 
 //=========================================================================================================
 
@@ -71,32 +77,36 @@ int main()
 	system("pause");
 	
 =========================================================================================================*/
-	/*
+	
 	int age;
 	int ageGroup=0;
-
+	do{
 	std::cout << "enter your age" << std::endl;
 	std::cin >> age;
 
-	if (0 < age && age <= 24)
-	{
-		ageGroup = 1;
-		std::cout << ageGroup << std::endl;
-	}
-	else if (24 < age && age <= 55)
-	{
-		ageGroup = 2;
-		std::cout << ageGroup << std::endl;
-	}
-	else if (55 < age)
-	{
-		ageGroup = 3;
-		std::cout << ageGroup << std::endl;
-	}
+	
+		if (0 < age && age <= 24)
+		{
+			ageGroup = 1;
+			std::cout << ageGroup << std::endl;
+		}
+		else if (age > 24 && age <= 55)
+		{
+			ageGroup = 2;
+			std::cout << ageGroup << std::endl;
+		}
+		else if (55 < age)
+		{
+			ageGroup = 3;
+			std::cout << ageGroup << std::endl;
+		}
 	else
 	{
+		ageGroup = 0;
 		std::cout << "age cannot be negative" << std::endl;
+		
 	}
+	} while (ageGroup == 0);
 
 	switch (ageGroup)
 	{
@@ -119,7 +129,7 @@ int main()
 
 	system("pause");
 	}
-	*/
+	
 //=========================================================================================================
 
 //=====================TASK3===================
